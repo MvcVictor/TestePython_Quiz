@@ -1,0 +1,36 @@
+print("seja bem-vindo ao meu programa")
+answer_user = input("Quer começar (Sim/Não) ") 
+
+if answer_user != "Sim":
+    quit()
+
+score = 0
+
+print("ok, vamos começar")     
+print("Qual meu manga favorito ? /n (A) One Piece /n (B) Vagabond /n (C) berserk")
+answer_1 = input("resposta: ")
+
+if answer_1 == "A":
+    print("parabens, vamos para a proxima")
+    score = score + 1
+else:
+    print("Incorreto")
+
+print("quem entrega a galinha azul no jogo stardew valley? /n (A) Linus /n (B) Marnie /n (C) Shane")
+answer_2 = input("resposta: ")
+
+if answer_2 == "C":
+    print("parabens")
+    score = score + 1
+else:
+    print("Incorreto")
+
+print("Qual o nome do protagonista de One Piece? /n (A) Luffy /n (B) Zoro /n (C) Sanji")
+answer_3 = input("resposta: ")
+if answer_3 == "A":
+    print("parabens, vamos para a proxima")
+    score = score + 1
+else:
+    print("Incorreto")
+
+print(f"Acabou o quiz, sua pontuação foi: {score}/3")
